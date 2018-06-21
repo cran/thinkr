@@ -1,13 +1,13 @@
-9d336eae2abd5133d0c7ad534b17ed9c *DESCRIPTION
-67d2a4b3901cd190005b08f68ebee8ba *NAMESPACE
-d854ffc598bcfbf6f1cf9f05290fe26b *R/all_ggplot_to_docx.R
+e4b46163a0a4f673ba6dbf823145f9eb *DESCRIPTION
+c9f25ec599150bb8e66b5918ef9038fc *NAMESPACE
+fbb169e14db31e749963a0ebc10c84ec *R/all_ggplot_to_docx.R
 85e783cecdad6ba5f85abebb4ee3c87f *R/as_numeric.R
 8159e6596abce1b176692fd0637356e8 *R/ca_ressemble_a_un_nombre.R
-bebcb08fee8e5cf268e801a41ec01e8b *R/clean_names.R
-a434174479c46f3ee54a857fc6ea1362 *R/efface_test.R
+677590573b3ff6f9ff36eaaad15050b4 *R/clean_names.R
+df48251f0ab63ce5ac01fb21c65c277b *R/efface_test.R
 498c67eca03f27edf63f325d4387cdf4 *R/excel_names.R
 1d207a24a389b85ca617cd5af4eb23bd *R/find_name.R
-2b7023aaa75572e109c4cad5bf2b2f7a *R/from_excel_to_posixt.R
+752d50b149df01f8b8c80d4c7b518c1d *R/from_excel_to_posixt.R
 e82b490a9a35cd3572094c996dc9cabf *R/is_full_figures.R
 89911fe43fc1ec67ce2b5a512cdd6760 *R/is_full_na.R
 9b88698589d4bbf1425a1b16b7763942 *R/is_likert.R
@@ -20,7 +20,7 @@ f072e5c1d5bf14f20bf772bf75cbea8d *R/thinkr.r
 04ebef700e446d32ab6c709027d41e99 *R/ublo.R
 ad3f3c64fcdb96e66b1859bd35c48478 *R/utils-pipe.R
 bd02a5a6681525ed5d42d07513a54ae7 *R/write_csv.R
-78a366ca10a6e2c6d9f6aa16889d8a7f *R/xlsx.plusieurs.R
+2d511a9aa34804957c97240942b62ed6 *R/xlsx.plusieurs.R
 69d7335bf435f07c268a57590f061159 *R/zzz.R
 ef7ad38b3ce903acc04f8c2e02f32ea3 *README.md
 c3ba900957d9651b55362fbd78f5bacd *man/all_ggplot_to_pptx.Rd
@@ -31,9 +31,8 @@ e79baa423ffec30c790cc7318e289639 *man/clean_vec.Rd
 a2c225cbbee10d8df89e8dd3c02e3d1c *man/dput_levels.Rd
 e6d1ff5c87f29cbab9058ee3ec2fba3b *man/excel_col.Rd
 36d707c5dc0825fa6196bc6e85ae7c71 *man/excel_to_ncol.Rd
-1273d6b590da054dcbd39cd79f5b83a7 *man/export_xl.Rd
 fe8cba06228f5399f58be50da932c6c9 *man/find_name.Rd
-b4b8b87122355b734aa9d5b8a366e1c8 *man/from_excel_to_posixt.Rd
+cc274a9760811ccf89fece3aac65906a *man/from_excel_to_posixt.Rd
 9d513d8212d93e42eaf883f2557a4fc7 *man/grapes-ni-grapes.Rd
 48370da4f5833e17a38c7ce1288c5908 *man/gsub2.Rd
 1f147b56e116f4e5d8b5240c6702a309 *man/is.01.Rd
@@ -53,5 +52,5 @@ f746b752f8aa0b11d63348764f443a9f *man/set_col_type.Rd
 0352bb1cb20bdd326bdb69d202196536 *tests/testthat.R
 d67960133ae29f4b147c5b819a640f19 *tests/testthat/clean_iris.test
 6e5e6fc0104b1577782ceb1cb8ffba20 *tests/testthat/make_unique_vec.test
-71c2c06dbb46d1d979bce4ae475c7f23 *tests/testthat/test-clean_names.R
+58349351082493caa29000fd452c1627 *tests/testthat/test-clean_names.R
 3593f76a3c78c6f40f1324f72aa13714 *tests/testthat/test-make_unique.R
