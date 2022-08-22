@@ -1,11 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- badges: start -->
 
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/thinkr)](https://cran.r-project.org/package=thinkr)
-[![](http://cranlogs.r-pkg.org/badges/thinkr)](https://cran.r-project.org/package=thinkr)[![Travis-CI
-Build
-Status](https://travis-ci.org/ThinkR-open/thinkr.svg?branch=master)](https://travis-ci.org/ThinkR-open/thinkr)[![Coverage
+[![R-CMD-check](https://github.com/ThinkR-open/thinkr/workflows/R-CMD-check/badge.svg)](https://github.com/ThinkR-open/thinkr/actions)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/thinkr)](https://cran.r-project.org/package=thinkr)
+[![](http://cranlogs.r-pkg.org/badges/thinkr)](https://cran.r-project.org/package=thinkr)
+[![Coverage
 status](https://codecov.io/gh/ThinkR-open/thinkr/branch/master/graph/badge.svg)](https://codecov.io/github/ThinkR-open/thinkr?branch=master)
+<!-- badges: end -->
 
 <img src="https://raw.githubusercontent.com/ThinkR-open/thinkr/master/inst/img/thinkr-hex-thinkr-package.png" width="250px" />
 
@@ -35,6 +37,18 @@ Github development version
 devtools::install_github("ThinkR-open/thinkr")
 ```
 
+Once installed, you can load `{thinkr}`:
+
+``` r
+library(thinkr)
+```
+
+or without the package startup message:
+
+``` r
+suppressPackageStartupMessages(library(thinkr))
+```
+
 ## Usage
 
 ### `peep`
@@ -45,7 +59,10 @@ devtools::install_github("ThinkR-open/thinkr")
 ``` r
 data(iris)
 # just symbols
-iris %>% peep(head,tail) %>% rename(species = Species) %>% summary
+iris %>%
+  peep(head, tail) %>%
+  rename(species = Species) %>%
+  summary()
 #>   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 #> 1          5.1         3.5          1.4         0.2  setosa
 #> 2          4.9         3.0          1.4         0.2  setosa
@@ -75,7 +92,9 @@ iris %>% peep(head,tail) %>% rename(species = Species) %>% summary
 #>                 
 #> 
 # expressions with .
-iris %>% peep(head(., n = 2), tail(., n = 3) ) %>% summary
+iris %>%
+  peep(head(., n = 2), tail(., n = 3)) %>%
+  summary()
 #>   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 #> 1          5.1         3.5          1.4         0.2  setosa
 #> 2          4.9         3.0          1.4         0.2  setosa
@@ -98,7 +117,9 @@ iris %>% peep(head(., n = 2), tail(., n = 3) ) %>% summary
 #>                 
 #> 
 # or both
-iris %>% peep(head, tail(., n = 3) ) %>% summary
+iris %>%
+  peep(head, tail(., n = 3)) %>%
+  summary()
 #>   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 #> 1          5.1         3.5          1.4         0.2  setosa
 #> 2          4.9         3.0          1.4         0.2  setosa
@@ -125,7 +146,9 @@ iris %>% peep(head, tail(., n = 3) ) %>% summary
 #>                 
 #> 
 # use verbose to see what happens
-iris %>% peep(head,tail(., n = 3), verbose = TRUE) %>% summary
+iris %>%
+  peep(head, tail(., n = 3), verbose = TRUE) %>%
+  summary()
 #> head(.)
 #>   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 #> 1          5.1         3.5          1.4         0.2  setosa
@@ -163,7 +186,7 @@ special characters, spaces, …
 ``` r
 data(iris)
 
-iris %>% head
+iris %>% head()
 #>   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 #> 1          5.1         3.5          1.4         0.2  setosa
 #> 2          4.9         3.0          1.4         0.2  setosa
@@ -171,7 +194,9 @@ iris %>% head
 #> 4          4.6         3.1          1.5         0.2  setosa
 #> 5          5.0         3.6          1.4         0.2  setosa
 #> 6          5.4         3.9          1.7         0.4  setosa
-iris %>% clean_names() %>% head
+iris %>%
+  clean_names() %>%
+  head()
 #>   sepal_length sepal_width petal_length petal_width species
 #> 1          5.1         3.5          1.4         0.2  setosa
 #> 2          4.9         3.0          1.4         0.2  setosa
@@ -198,6 +223,12 @@ Find Excel column position name from column number and inversely
 ``` r
 ncol_to_excel(6)
 #> [1] "F"
-excel_to_ncol('AF')
+excel_to_ncol("AF")
 #> [1] 32
 ```
+
+## Code of Conduct
+
+Please note that this project is released with a [Contributor Code of
+Conduct](https://www.contributor-covenant.org/version/1/0/0/code-of-conduct.html).
+By participating in this project you agree to abide by its terms.
